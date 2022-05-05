@@ -1,0 +1,136 @@
+/* Styles go here */
+* {
+    width: 100%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: rgb(244, 244, 244);
+    background-color: #1f1b27;
+    height: 100vh;
+    padding: 2rem;
+  }
+
+  #content {
+      display: flex;
+  }
+
+  #content * {
+      width: 90%;
+  }
+
+  h1 {
+      text-align: center;
+      transform: translateX(-5%);
+  }
+
+  #productName {
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    color: #333;
+    background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+    transform: translateX(7%) translateY(30%);
+  }
+
+  #productPrice {
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    color: #333;
+    background-image: linear-gradient(to top left, #39b385, #9be15d);
+    transform: translateX(7%) translateY(30%);
+  }
+
+  #productName::placeholder {
+      font-weight: bolder;
+    color: rgb(97, 56, 144);
+  }
+
+  #productPrice::placeholder {
+    font-weight: bolder;
+    color: rgb(97, 56, 144);
+  }
+
+  .productForm {
+    text-align: right;
+    transition: all ease-in-out 1000ms;
+  }
+
+  .btn-primary {
+    width: 120px !important;
+    height: 40px;
+    font-size: 0.9rem !important;
+    transform: translateX(-81%) translateY(45%);
+    transition: all 200ms ease-in-out !important;
+    border: 1px solid transparent !important;
+    color: #1F1B27;
+    font-weight: bold;
+  }
+
+.btn-primary:hover {
+    border: 1px solid #007bff !important;
+    background-color: #1F1B27;
+    color: white;
+    font-weight: bolder;
+  }
+
+.table {
+    color: rgb(255, 255, 255) !important;
+    border-style : hidden !important;
+}
+
+#productTable {
+    border-radius: 15px;
+    padding: 2rem 3rem;
+    color: #333;
+    background-image: linear-gradient(to top left, #ee3462, #c0151e);
+    transform: translateY(4%);
+}
+
+h2 {
+    text-align: center;
+    font-weight: 549;
+    font-size: 40px;
+}
+
+.loader {
+    border: 12px solid #f3f3f3;
+    border-top: 12px solid blue;
+    /* border-bottom: 16px solid blue; */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 33vh;
+    left: 44vw;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  #account {
+      position: absolute;
+      left: 77vw;
+      bottom: 0.5vw;
+      font-size: 15px;
+  }
+
+  .buyButton {
+    border-radius: 6px;
+    width: 65px !important;
+    height: 35px;
+    font-size: 0.9rem !important;
+    transition: all 200ms ease-in-out !important;
+    border: 1px solid transparent !important;
+    color: #1F1B27;
+    font-weight: bold;
+  }
+
+  .buyButton:hover {
+    border: 1px solid white !important;
+    background-color: #ee3462;
+    color: white;
+    font-weight: bolder;
+  }
